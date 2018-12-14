@@ -1,0 +1,11 @@
+#######################################
+# Syntax Coloring Map For LEDLIB
+#######################################
+
+Buzzer	KEYWORD1
+
+Buzzer	KEYWORD2
+setOnBuzzer	KEYWORD2
+setOffBuzzer	KEYWORD2
+frequence	KEYWORD2
+setOnBuzzerFrequence	KEYWORD2
