@@ -1,4 +1,4 @@
-#include "Arduino.h"
+#import "Arduino.h"
 #include "Buzzer.h"
 #include "potentiometer.h"
 
@@ -11,8 +11,8 @@ Potentiometer pot;
 
 Buzzer::Buzzer(int pin)
 {
-	pinMode(pin, OUTPUT);
 	_pin = pin;
+	pinMode(pin, OUTPUT);
 }
 
 /**
