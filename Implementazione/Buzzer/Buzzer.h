@@ -5,13 +5,13 @@
 
 class Buzzer
 {
-
-public:
+private:
 	int _pin;
-	Buzzer(int);
+public:
+	void Buzzer(int pin);
 	void setOnBuzzer();
 	void setOffBuzzer();
-	int frequence(int);
+	int frequence(int range);
 	void setOnBuzzerFrequenze();
 };
 
