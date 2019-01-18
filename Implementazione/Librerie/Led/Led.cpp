@@ -12,6 +12,11 @@ Led::Led(int pin)
 	_pin = pin;
 }
 
+bool Led::getState()
+{
+	return digitalRead(_pin);
+}
+
 void Led::ledOn()
 {
 	digitalWrite(_pin, HIGH);	
@@ -50,3 +55,5 @@ void Led::toggle(int buttonPin)
 	    delay(5);
 	}
 }
+
+
