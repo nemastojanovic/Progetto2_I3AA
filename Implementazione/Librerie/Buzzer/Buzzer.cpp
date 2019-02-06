@@ -49,5 +49,8 @@ void Buzzer::setOnBuzzerFrequenze() {
 	tone(_pin, frequence());
 }
 
-
+void Buzzer:setOnReverseBuzzerFrequenze(){
+	int reverse = 1024-frequence();
+	tone(_pin, reverse);
+}
 

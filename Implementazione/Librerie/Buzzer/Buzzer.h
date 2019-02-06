@@ -13,6 +13,7 @@ public:
 	void setOffBuzzer();
 	int frequence(int range);
 	void setOnBuzzerFrequenze();
+	void setOnReverseBuzzerFrequenze();
 };
 
 #endif
