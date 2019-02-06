@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-11-12" view-index="0" gantt-divider-location="707" resource-divider-location="300" version="2.8.6" locale="it">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Nome" width="368" order="0"/>
+        <field id="tpd4" name="Data d'inizio" width="173" order="1"/>
+        <field id="tpd5" name="Data di fine" width="162" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nome" width="210" order="0"/>
+        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="47" name="Introduzione" meeting="false" start="2018-11-14" duration="3" complete="0" expand="true">
+            <depend id="42" type="2" difference="0" hardness="Strong"/>
+            <task id="48" name="Consegna del QDC" meeting="false" start="2018-11-14" duration="1" complete="0" expand="true"/>
+            <task id="45" name="Risoluzione dubbi" meeting="false" start="2018-11-14" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="42" name="Analisi" meeting="false" start="2018-11-21" duration="3" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <task id="43" name="Analisi dei requisiti" meeting="false" start="2018-11-21" duration="3" complete="0" expand="true"/>
+            <task id="44" name="Analisi del dominio" meeting="false" start="2018-11-21" duration="3" complete="0" expand="true"/>
+            <task id="46" name="Analisi dei costi" meeting="false" start="2018-11-21" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="1" name="Progettazione" meeting="false" start="2018-11-28" duration="3" complete="0" expand="true">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <task id="17" name="Gantt" meeting="false" start="2018-11-28" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="20" name="Implementazione" meeting="false" start="2018-12-05" duration="41" complete="0" expand="true">
+            <task id="22" name="Creazione primo modulo" meeting="false" start="2018-12-05" duration="11" complete="0" expand="true">
+                <depend id="58" type="2" difference="0" hardness="Strong"/>
+                <task id="49" name="Raccolta informazioni" meeting="false" start="2018-12-05" duration="1" complete="0" expand="true"/>
+                <task id="53" name="Design procedurale" meeting="false" start="2018-12-05" duration="1" complete="0" expand="true"/>
+                <task id="54" name="Hardware" meeting="false" start="2018-12-05" duration="3" complete="0" expand="true"/>
+                <task id="55" name="Codice" meeting="false" start="2018-12-07" duration="6" complete="0" expand="true"/>
+                <task id="56" name="Test" meeting="false" start="2018-12-14" duration="1" complete="0" expand="true"/>
+                <task id="57" name="Guida d'utilizzo" meeting="false" start="2018-12-14" duration="4" complete="0" expand="true"/>
+            </task>
+            <task id="58" name="Creazione secondo modulo" meeting="false" start="2018-12-21" duration="19" complete="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+                <task id="64" name="Raccolta informazioni" meeting="false" start="2018-12-21" duration="1" complete="0" expand="true"/>
+                <task id="65" name="Design procedurale" meeting="false" start="2018-12-21" duration="1" complete="0" expand="true"/>
+                <task id="66" name="Hardware" meeting="false" start="2018-12-21" duration="1" complete="0" expand="true"/>
+                <task id="67" name="Codice" meeting="false" start="2018-12-21" duration="16" complete="0" expand="true"/>
+                <task id="68" name="Test" meeting="false" start="2019-01-11" duration="1" complete="0" expand="true"/>
+                <task id="69" name="Guida d'utilizzo" meeting="false" start="2019-01-11" duration="4" complete="0" expand="true"/>
+            </task>
+            <task id="59" name="Creazione terzo modulo" meeting="false" start="2019-01-18" duration="9" complete="0" expand="true">
+                <task id="72" name="Raccolta informazioni" meeting="false" start="2019-01-18" duration="1" complete="0" expand="true"/>
+                <task id="73" name="Design procedurale" meeting="false" start="2019-01-18" duration="1" complete="0" expand="true"/>
+                <task id="74" name="Hardware" meeting="false" start="2019-01-18" duration="3" complete="0" expand="true"/>
+                <task id="75" name="Codice" meeting="false" start="2019-01-18" duration="6" complete="0" expand="true"/>
+                <task id="76" name="Test" meeting="false" start="2019-01-25" duration="1" complete="0" expand="true"/>
+                <task id="77" name="Guida d'utilizzo" meeting="false" start="2019-01-25" duration="4" complete="0" expand="true"/>
+            </task>
+        </task>
+        <task id="0" name="Documentazione" meeting="false" start="2018-11-21" duration="58" complete="0" expand="true"/>
+        <task id="5" name="Presentazione" meeting="false" start="2019-02-08" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

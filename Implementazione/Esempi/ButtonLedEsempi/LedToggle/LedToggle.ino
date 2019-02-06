@@ -3,8 +3,9 @@
 /* Includo la led button */
 #include <Led.h>
 
+/*Istanzio un oggetto di tipo led*/
 Led led(1);
-
+/*Istanzio un oggetto di tipo button*/
 Button button(0);
 
 void setup() {
@@ -12,6 +13,6 @@ void setup() {
 }
 
 void loop() {
-  bool state = button.getButtonValue();
-  button.toggle(state);
+  bool state = button.Button();
+  led.toggle(state);
 }

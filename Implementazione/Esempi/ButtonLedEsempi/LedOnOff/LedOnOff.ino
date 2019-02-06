@@ -1,21 +1,24 @@
-/* Includo la libreria button */
+/* Include la libreria del buttone */
 #include <Button.h>
-/* Includo la led button */
+/* Include la libreria del led */
 #include <Led.h>
 
+/*Istanzia un oggetto di tipo led*/
 Led led(1);
-
+/*Istanzia un oggetto di tipo button*/
 Button button(0);
 
-
+/*Metodo setup che viene avviato una volta sola all'inizio*/
 void setup() {
-  // put your setup code here, to run once:
+
 }
 
+/*Metodo loop che viene richiamato all'infinito*/
 void loop() {
-    /* Prendo lo stato del bottone */
+  /* Prendo lo stato del bottone */
   bool state = button.getButtonValue();
-  /* Se il bottone è premuto lo accendo, sennò lo spengo. */
+ 
+  /* Se il bottone è premuto viene acceso, sennò viene spento. */
   if(state) {
     led.ledOn();
   } else {
