@@ -18,7 +18,7 @@ Buzzer::Buzzer(int pin)
 /**
 * Metodo che provoca il suono 
 */
-int Buzzer::setOnBuzzer()
+void Buzzer::setOnBuzzer()
 {
 	digitalWrite(_pin, HIGH);	
 }
@@ -27,7 +27,7 @@ int Buzzer::setOnBuzzer()
 /**
 * Metodo che spegne il suono
 */
-int Buzzer::setOffBuzzer()
+void Buzzer::setOffBuzzer()
 {
 	digitalWrite(_pin, LOW);
 }
