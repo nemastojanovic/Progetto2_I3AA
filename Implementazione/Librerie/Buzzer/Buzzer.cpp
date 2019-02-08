@@ -1,5 +1,6 @@
 #include "Arduino.h"
 #include "Buzzer.h"
+#include "potentiometer.h"
 
 Potentiometer pot;
 
@@ -17,7 +18,7 @@ Buzzer::Buzzer(int pin)
 /**
 * Metodo che provoca il suono 
 */
-void Buzzer::setOnBuzzer()
+int Buzzer::setOnBuzzer()
 {
 	digitalWrite(_pin, HIGH);	
 }
@@ -26,7 +27,7 @@ void Buzzer::setOnBuzzer()
 /**
 * Metodo che spegne il suono
 */
-void Buzzer::setOffBuzzer()
+int Buzzer::setOffBuzzer()
 {
 	digitalWrite(_pin, LOW);
 }
@@ -34,19 +35,22 @@ void Buzzer::setOffBuzzer()
 /**
 * Ritorna la frequenza che verrà applicata al buzzer
 */
-void Buzzer::frequence(int range, int potValue)
+int Buzzer::frequence(int range)
 {
-	int frequence = range/1024*potValue;
-	tone(_pin, frequence);
+	int frequence = range/1024*pot.getValue();
+	return frequence;
 }
 
 
 /**
-* Setta la frequenza al buzzer all'inverso
+* Setta la frequenza al buzzer
 */
-void Buzzer::setOnReverseBuzzerFrequenze(int range, int potValue){
-	int frequence = range / 1024 * potValue;
-	int reverse = 1024-frequence;
+void Buzzer::setOnBuzzerFrequenze() {
+	tone(_pin, frequence());
+}
+
+void Buzzer:setOnReverseBuzzerFrequenze(){
+	int reverse = 1024-frequence();
 	tone(_pin, reverse);
 }
 

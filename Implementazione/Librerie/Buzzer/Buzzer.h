@@ -11,8 +11,9 @@ public:
 	void Buzzer(int pin);
 	void setOnBuzzer();
 	void setOffBuzzer();
-	void frequence(int range, int potValue);
-	void setOnReverseBuzzerFrequenze(int range, int potValue);
+	int frequence(int range);
+	void setOnBuzzerFrequenze();
+	void setOnReverseBuzzerFrequenze();
 };
 
 #endif
