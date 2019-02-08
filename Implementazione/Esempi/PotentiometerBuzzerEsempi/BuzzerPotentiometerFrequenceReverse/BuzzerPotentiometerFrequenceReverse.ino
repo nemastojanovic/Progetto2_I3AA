@@ -20,6 +20,7 @@ void loop() {
   /* Prendo lo stato del potenziometro */
   int stato = pot.getValue();
 
-  /*Setto il range e lo stato del potenziometro che poi mi setta la frequenza al buzzer*/
-  buzzer.frequence(range, stato);
+  /*Setto il range e lo stato del potenziometro che 
+  *poi mi setta la frequenza al buzzer all'inverso*/
+  buzzer.setOnReverseBuzzerFrequenze(range, stato);
 }

@@ -8,11 +8,16 @@ Led led(1);
 /*Istanzio un oggetto di tipo button*/
 Button button(0);
 
+/*Metodo setup che viene avviato una volta sola all'inizio*/
 void setup() {
   // put your setup code here, to run once:
 }
 
+/*Metodo loop che viene richiamato all'infinito*/
 void loop() {
-  bool state = button.Button();
-  led.toggle(state);
+  /*Ritorna il valore del bottone con il toggle*/
+  bool state = button.toggle();
+
+  /*Setta il led in base al valore ricevuto dal toggle*/
+  led.setLed(state);
 }

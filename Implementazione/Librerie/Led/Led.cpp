@@ -12,22 +12,36 @@ Led::Led(int pin)
 	_pin = pin;
 }
 
+
+/**
+* Metodo che ritorna lo stato del led
+*/
 bool Led::getState()
 {
 	return digitalRead(_pin);
 }
 
+/**
+* Metodo che accende il led
+*/
 void Led::ledOn()
 {
 	digitalWrite(_pin, HIGH);	
 }
 
 
+/**
+* Metodo che spegne il led
+*/
 void Led::ledOff()
 {
 	digitalWrite(_pin, LOW);
 }
 
+
+/**
+* Metodo che fa lampeggiare il Led con la velocità in base al parametro
+*/
 void Led::blink(int milliseconds)
 {
 	while(true){
@@ -39,21 +53,14 @@ void Led::blink(int milliseconds)
 		
 }
 
-void Led::toggle(int buttonPin)
+/*
+* Metodo che setta il valore led in base allo stato del parametro (HIGH O LOW)
+*/
+void Led::setLed(bool stato)
 {
-	bool mode = 0;
-	bool buttonState = 0;
-	
-	if (!digitalRead(buttonPin)){
-	    if (!buttonState) {
-	      buttonState = true;
-	      Mode = !Mode;
-	    }else{
-	      buttonState = false;
-	    }
-	    digitalWrite(_pin, Mode); 
-	    delay(5);
-	}
-}
+	digitalWrite(_pin, stato);
+};
+
+
 
 
