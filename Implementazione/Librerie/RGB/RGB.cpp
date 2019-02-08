@@ -19,6 +19,7 @@ RGB::RGB(int pinR, int pinG, int pinB)
 	_pinB = pinB;
 }
 
+//in base al valore del potenziometro val, accendo e spengo i led
 void RGB::digitalRGB(int val)
 {
 	if(val > 850){
@@ -48,7 +49,10 @@ void RGB::digitalRGB(int val)
   	}
 }
 
-void RGB::analogRGB(int val)
+/*In base al valore del potenziometro val, 
+il range di quel valore (quello dell'if) viene mappato, 
+calcolando l'intensità che deve avere ogni led ad una 
+determinata fase void RGB::analogRGB(int val)*/
 {
 	if(val > 854){
 	    intensity = map(val-854,0,170,255,0);
@@ -83,15 +87,20 @@ void RGB::analogRGB(int val)
   	}		
 }
 
+
 void RGB::resetterRGB(int val)
 {
 	bool maxed = false;
 	int reset = 0;
 	int intensity = 0;
-
-	if(val > 1000){
+	
+	if(val > 1000){ 
     	maxed = true;
   	}
+  	
+  	/*Quanodo il potenziometro ha raggiunto almeno una voltà l'intensità massima,
+  	e sucessivamente quella minima, viene incrementato il valore reset, che col 
+	modulo 4 definirà in che fase di colore si trova.*/
   	if(maxed && val < 2){
     	reset++;
     	maxed = false;
