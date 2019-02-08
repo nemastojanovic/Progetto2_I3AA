@@ -10,6 +10,7 @@ private:
 public:
 	void Button(int pin);
 	bool getButtonValue();
+	void toggle();
 };
 
 #endif

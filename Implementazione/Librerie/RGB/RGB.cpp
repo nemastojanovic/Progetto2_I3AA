@@ -1,6 +1,6 @@
 #include "Arduino.h"
 #include "RGB.h"
-#include "potentiometer.h"
+
 
 Potentiometer pot;
 
@@ -19,9 +19,8 @@ RGB::RGB(int pinR, int pinG, int pinB)
 	_pinB = pinB;
 }
 
-void RGB::digitalRGB()
+void RGB::digitalRGB(int val)
 {
-	int val = pot.getValue();
 	if(val > 850){
 	    digitalWrite(_pinR, LOW);
 	    digitalWrite(_pinG, HIGH);
@@ -49,9 +48,8 @@ void RGB::digitalRGB()
   	}
 }
 
-void RGB::analogRGB()
+void RGB::analogRGB(int val)
 {
-	int val = pot.getValue();
 	if(val > 854){
 	    intensity = map(val-854,0,170,255,0);
 	    analogWrite(redPin, 0);
@@ -85,14 +83,12 @@ void RGB::analogRGB()
   	}		
 }
 
-void RGB::resetterRGB()
+void RGB::resetterRGB(int val)
 {
 	bool maxed = false;
 	int reset = 0;
-	
 	int intensity = 0;
-	int val = pot.getValue();
-	
+
 	if(val > 1000){
     	maxed = true;
   	}

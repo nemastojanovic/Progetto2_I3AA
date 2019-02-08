@@ -12,7 +12,7 @@ public:
 	void ledOn();
 	void ledOff();
 	void blink(int milliseconds);
-	void toggle(int buttonPin);
+	void setLed(bool stato);
 	bool getState();
 };
 
