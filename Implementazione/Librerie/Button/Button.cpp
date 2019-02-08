@@ -23,22 +23,3 @@ bool Button::getButtonValue()
 	return false;
 }
 
-
-
-void Button::toggle()
-{
-	bool mode = 0;
-	bool buttonState = 0;
-
-	if (!getButtonValue()) {
-		if (!buttonState) {
-			buttonState = true;
-			Mode = !Mode;
-		}
-		else {
-			buttonState = false;
-		}
-		digitalWrite(_pin, Mode);
-		delay(5);
-	}
-}
