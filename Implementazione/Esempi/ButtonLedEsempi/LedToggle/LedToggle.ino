@@ -10,14 +10,14 @@ Button button(0);
 
 /*Metodo setup che viene avviato una volta sola all'inizio*/
 void setup() {
-  // put your setup code here, to run once:
+
 }
 
 /*Metodo loop che viene richiamato all'infinito*/
 void loop() {
-  /*Ritorna il valore del bottone con il toggle*/
-  bool state = button.toggle();
+  /*Ritorna il valore del bottone*/
+  int buttonState = button.getButtonValue();
 
-  /*Setta il led in base al valore ricevuto dal toggle*/
-  led.setLed(state);
+  /*Setta il led con il pin del buttonState*/
+  led.toggle(buttonState);
 }

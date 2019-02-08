@@ -19,6 +19,8 @@ void loop() {
   /* Prendo lo stato del potenziometro */
   int stato = pot.getValue();
 
-  /*Setto il valore del potenziometro al metodo digitalRGB della libreria RGB*/
+  /*Setto il valore del potenziometro al metodo resetterRGB della libreria RGB*/
   rgb.resetterRGB(stato);
 }
+
+
