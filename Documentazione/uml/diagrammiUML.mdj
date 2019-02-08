@@ -1470,7 +1470,7 @@
 											"top": 504,
 											"width": 229,
 											"height": 13,
-											"text": "+resetterRGB(val): void",
+											"text": "+resetterRGB(int val): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1955,7 +1955,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFozC9rd5CCgio="
 									},
-									"name": "int val"
+									"name": "int val",
+									"type": ""
 								}
 							]
 						},
@@ -2010,8 +2011,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFozDAmkZCR/38="
 									},
-									"name": "val",
-									"type": ""
+									"name": "int val"
 								}
 							]
 						}
