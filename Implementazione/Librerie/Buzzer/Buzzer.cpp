@@ -38,15 +38,15 @@ int Buzzer::setOffBuzzer()
 * Setta la frequenza al buzzer
 */
 void Buzzer::setOnBuzzerFrequenze(int range, int potValue) {
-	int frequence = range / 1024 * pot.getValue();
+	int frequence = range / 1024 * potValue;
 	tone(_pin, frequence);
 }
 
 /**
 * Setta la frequenza inversa al buzzer
 */
-void Buzzer:setOnReverseBuzzerFrequenze(int range, int potValue){
-	int frequence = range / 1024 * pot.getValue();
+void Buzzer::setOnReverseBuzzerFrequenze(int range, int potValue){
+	int frequence = range / 1024 * potValue;
 	int reverse = 1024- frequence;
 	tone(_pin, reverse);
 }
