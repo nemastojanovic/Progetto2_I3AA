@@ -9,11 +9,11 @@ private:
 	int _pin;
 public:
 	void Led(int pin);
-	int getLedValue();
+	bool getState();
 	void ledOn();
 	void ledOff();
 	void blink(int milliseconds);
-	void Ltoggle(int buttonPin);
+	void toggle(int buttonPin);
 };
 
 #endif

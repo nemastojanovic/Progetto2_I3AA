@@ -17,6 +17,12 @@ void Led::ledOn()
 	digitalWrite(_pin, HIGH);	
 }
 
+bool Led:getState(){
+	if(digitalRead(_pin)){
+		return true;
+	}
+	return false;
+}
 
 void Led::ledOff()
 {
