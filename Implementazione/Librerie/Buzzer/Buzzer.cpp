@@ -32,25 +32,22 @@ int Buzzer::setOffBuzzer()
 	digitalWrite(_pin, LOW);
 }
 
-/**
-* Ritorna la frequenza che verrà applicata al buzzer
-*/
-int Buzzer::frequence(int range)
-{
-	int frequence = range/1024*pot.getValue();
-	return frequence;
-}
 
 
 /**
 * Setta la frequenza al buzzer
 */
-void Buzzer::setOnBuzzerFrequenze() {
-	tone(_pin, frequence());
+void Buzzer::setOnBuzzerFrequenze(int range, int potValue) {
+	int frequence = range / 1024 * potValue;
+	tone(_pin, frequence);
 }
 
-void Buzzer:setOnReverseBuzzerFrequenze(){
-	int reverse = 1024-frequence();
+/**
+* Setta la frequenza inversa al buzzer
+*/
+void Buzzer::setOnReverseBuzzerFrequenze(int range, int potValue){
+	int frequence = range / 1024 * potValue;
+	int reverse = 1024- frequence;
 	tone(_pin, reverse);
 }
 
