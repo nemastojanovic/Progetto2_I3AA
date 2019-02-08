@@ -101,34 +101,6 @@
 						},
 						{
 							"_type": "UMLOperation",
-							"_id": "AAAAAAFozCeaeo72sR8=",
-							"_parent": {
-								"$ref": "AAAAAAFozCPaAI52TkU="
-							},
-							"name": "frequence",
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFozCjuxI8Om8I=",
-									"_parent": {
-										"$ref": "AAAAAAFozCeaeo72sR8="
-									},
-									"name": "int range",
-									"type": ""
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFozCjuxY8PXNg=",
-									"_parent": {
-										"$ref": "AAAAAAFozCeaeo72sR8="
-									},
-									"type": "int",
-									"direction": "return"
-								}
-							]
-						},
-						{
-							"_type": "UMLOperation",
 							"_id": "AAAAAAFozCeuLo78+hY=",
 							"_parent": {
 								"$ref": "AAAAAAFozCPaAI52TkU="
@@ -364,23 +336,6 @@
 										},
 										{
 											"_type": "UMLOperationView",
-											"_id": "AAAAAAFozCeapo75ubQ=",
-											"_parent": {
-												"$ref": "AAAAAAFozCPaAo5/Kw4="
-											},
-											"model": {
-												"$ref": "AAAAAAFozCeaeo72sR8="
-											},
-											"font": "Arial;13;0",
-											"left": 189,
-											"top": 242,
-											"width": 229,
-											"height": 13,
-											"text": "+frequence(int range): int",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLOperationView",
 											"_id": "AAAAAAFozCeuX47/JV8=",
 											"_parent": {
 												"$ref": "AAAAAAFozCPaAo5/Kw4="
@@ -390,7 +345,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 189,
-											"top": 257,
+											"top": 242,
 											"width": 229,
 											"height": 13,
 											"text": "+setOnBuzzerFrequenze(): void",
@@ -407,7 +362,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 189,
-											"top": 272,
+											"top": 257,
 											"width": 229,
 											"height": 13,
 											"text": "+setOnReverseBuzzerFrequenze(): void",
@@ -418,7 +373,7 @@
 									"left": 184,
 									"top": 192,
 									"width": 239,
-									"height": 98
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -458,7 +413,7 @@
 							"left": 184,
 							"top": 144,
 							"width": 239,
-							"height": 165,
+							"height": 131,
 							"nameCompartment": {
 								"$ref": "AAAAAAFozCPaAo55TGk="
 							},
@@ -2011,7 +1966,8 @@
 									"_parent": {
 										"$ref": "AAAAAAFozDAmkZCR/38="
 									},
-									"name": "int val"
+									"name": "int val",
+									"type": ""
 								}
 							]
 						}
